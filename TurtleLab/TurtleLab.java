@@ -1,40 +1,26 @@
+import java.awt.Color;
 
-
-/**
- * Write a description of class TurtleLab here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class TurtleLab
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    private int x;
-
-    /**
-     * Default constructor for objects of class TurtleLab
-     */
-    public TurtleLab()
+     public static void main(String[] args)
     {
-        // initialise instance variables
-        x = 0;
+        World turtleWorld = new World(500,500);
+        Turtle turtle = new Turtle(turtleWorld);
+        turtle.setPenColor(Color.red);
+        turtle.setPenWidth(10);
+        
+        turtle.penUp();
+        turtle.moveTo(5,495);
+        turtle.penDown();
+        turtle.turnRight();
+        turtle.forward(490);
+        
+        int turtleY = 0;
+        
+        while (turtleY > 0)
+        {
+            
+        }
+        
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x+y;
-    }
-
 }
