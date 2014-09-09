@@ -14,6 +14,10 @@ public class TurtleLab
         turtle2.setPenColor(Color.blue);
         turtle2.setPenWidth(10);
         
+        Turtle turtle3 = new Turtle(turtleWorld);
+        turtle3.setPenColor(Color.yellow);
+        turtle3.setPenWidth(15);
+        
         turtle2.penUp();
         turtle2.moveTo(5,5);
         turtle2.turnRight();
@@ -28,7 +32,7 @@ public class TurtleLab
         turtle.forward(490);
         
         int turtleY = turtle.getYPos();
-        
+        //adds the red and green lines
         while (turtleY > 0)
         {
             turtle.penUp();
@@ -52,6 +56,7 @@ public class TurtleLab
         
         int turtle2X = turtle2.getXPos();
         
+        //adds the blue lines
         while(turtle2X < 490)
         {
             turtle2.penUp();
@@ -71,6 +76,34 @@ public class TurtleLab
             turtle2X = turtle2.getXPos();
         }
         
+        //Adding my name to the pattern
         
+        turtle3.penUp();
+        turtle3.moveTo(100,350);
+        turtle3.penDown();
+        turtle3.forward(200);
+        turtle3.turnRight();
+        turtle3.forward(100);
+        turtle3.penUp();
+        turtle3.moveTo(100,250);
+        turtle3.penDown();
+        turtle3.forward(75);
+        
+        turtle3.penUp();
+        turtle3.moveTo(250,350);
+        turtle3.turnLeft();
+        turtle3.penDown();
+        turtle3.forward(100);
+        turtle3.penUp();
+        turtle3.forward(50);
+        turtle3.penDown();
+        turtle3.forward(5);
+        
+        turtle3.penUp();
+        turtle3.moveTo(325,350);
+        turtle3.penDown();
+        turtle3.forward(100);
+        turtle3.moveTo(400,350);
+        turtle3.forward(100);
     }
 }
